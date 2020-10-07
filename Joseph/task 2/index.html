@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id='add-book'>
+        <h2>ADD BOOK</h2>
+        <form action = '/add-book' method="post" >
+            <label for='name'>Book Name:</label>
+            <input type="text" id='name' name='name' ><br>
+            <label for='author'>Author Name:</label>
+            <input type="text" id='author' name='author' ><br>
+            <label for='isbn'>ISBN:</label>
+            <input type="text" id='isbn' name='isbn'><br>
+            <button type="submit" name="submit">ADD</button>
+        </form>
+    </div>
+
+    <div id='get-all'>
+      <h2>GET ALL</h2>
+      <form action = '/get-all' method="post" >
+          <button type="submit" name="submit">GEt ALL</button>
+      </form>
+    </div>
+
+    <div id='update'>
+        <h2>UPDATE BOOK INFORMATION</h2>
+        <form action = '/update-book' method="post" >
+            <label for='name'>Book Name:</label>
+            <input type="text" id='name' name='name' ><br>
+            <label for='author-name'>Author Name:</label>
+            <input type="text" id='author-name' name='author-name' ><br>
+            <label for='isbn'>ISBN:</label>
+            <input type="text" id='isbn' name='isbn'><br>
+            <button type="submit" name="submit">UPDATE</button>
+        </form>
+    </div>
+
+    <div id='delete'>
+        <h2>DELETE BOOK</h2>
+        <form action = '/delete-book' method="post" >
+            <label for='isbn'>ISBN:</label>
+            <input type="text" id='isbn' name='isbn'><br>
+            <button type="submit" name="submit">DELETE</button>
+        </form>
+    </div>
+
+</body>
+</html>
